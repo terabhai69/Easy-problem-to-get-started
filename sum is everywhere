@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    long long n,i,sum=0,sum1=0,k=1;
+    scanf("%d",&n);
+    for(i=1;i<=(2*n);i++)
+    {
+        if(i % 2 == 1)
+            sum1 += i;
+        else
+            sum += i;
+    }
+    printf("%llu %llu",sum1,sum);
+    return 0;
+}
