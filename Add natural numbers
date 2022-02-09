@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    unsigned long long n,i,sum = 0;
+    scanf("%llu",&n);
+    for(i=1;i<=n;i++)
+    {
+        sum = sum + i;
+    }
+    printf("%llu",sum);
+    return 0;
+}
