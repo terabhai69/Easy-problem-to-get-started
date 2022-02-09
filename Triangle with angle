@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if((a<181)&&(b<181)&&(c<181)&&(a != 0)&&(b != 0)&&(c != 0))
+    {
+        if((a+b+c) == 180)
+        printf("YES");
+    else
+        printf("NO");
+    }
+    else
+        printf("NO");
+    return 0;
+}
