@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,k,i,flag = 1;
+    scanf("%d %d",&n,&k);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        if(a[i] == k)
+        {
+            flag = 0;
+            break;
+        }
+    }
+    if(flag == 1)
+        printf("-1");
+    else
+        printf("1");
+    return 0;
+}
