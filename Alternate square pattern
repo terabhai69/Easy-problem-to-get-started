@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int lines,i,j=1,k=1;
+   scanf("%d",&lines);
+   for(i=1;i<=lines;i++)
+   {
+        if(lines<0)
+            break;
+        if(lines>200)
+            break;
+       while((k < 6)&&(i%2 == 1))
+       {
+            printf("%d ",j);
+            j++;
+            k++;
+       }
+       if(i%2 == 1)
+       {
+            k=1;
+            j=j+4;
+            printf("\n");
+       }
+       while((k < 6)&&(i%2 == 0))
+       {
+            printf("%d ",j);
+            j--;
+            k++;
+       }
+       if(i%2 == 0)
+       {
+            k=1;
+            j=j+6;
+            printf("\n");
+       }
+   }
+   return 0;
+}
